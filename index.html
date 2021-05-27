@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>demo</title>
+</head>
+
+<body>
+  <header>
+    <h1 align="center">WELCOME TO WHAT I LEARNED IN 3hr of HTML</h1>
+    <hr>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">contact</a>
+    <a href="#">more</a>
+    <hr>
+  </nav>
+  <main>
+    <section>
+      <h2>About:</h2>
+      <p>thia is a demo site that uses to test, all i learned in HTML in 3hr in my first day of learning it. </p>
+    </section>
+    <section>
+      <h2>Topics:</h2>
+      <h3>introduction to html:</h3>
+      <p>html means <em>hyper text mark up language</em>, it is used to make the structure of the website,you can not do
+        styling using it.you can also do some oter coll stuffs too..</p>
+      <h3>Elements:</h3>
+      <p>these are individual component of the document ex-<b>heading element:</b>
+      <h1>hi</h1>
+      <h2>hi</h2>
+      <h3>hi</h3>
+      <h4>hi</h4>
+      <h5>hi</h5>
+      <h6>hi</h6> as we ca see there are 6 attributes of the hedding elements.
+      </p>
+      <h3>Tags:</h3>
+      <p>all that is been used in the opening and closing angle brackets, tags have a opening and a closing.just the
+        closing thing is similar but has a slash before the tag name. but there are some tags that do not have closing.
+        some comman tags mostly used in a <b>paragraph element</b> ex-<b>Bold,</b> <i>italic,</i> <small>small,</small>
+        <sup>superscript</sup>, <sub>subscript</sub> ,line break-<br> ,horzontal rule-
+        <hr>
+      </p>
+      <h3>Attributes:</h3>
+      <p>they give additional properties to the elements ex-as previosly seen in the heading element, aligning(left,
+        right, center)
+      <p align="left">left</p>
+      <p align="right">right</p>
+      <p align="center">center </p>
+      <h4>boolean Attributes:</h4>they have no value ex- <input type="text"> </p>
+      <h3>Entities-</h3>
+      <p>used to disply special characters,emojis,symbols ex-</p>&nbsp; gives space after code.can be used as
+      layout
+      <h3>Comments</h3>
+      <p>
+        <!--hi--> is a coomment(see in the codes)
+      </p>
+      <h3>Hyper link</h3> ex- <a href="https://www.google.com" target="_blank">can be a absolute(like this one it takes
+        you to google) and opens in a new tab,</a>
+      <br>
+      <a href="htmldemo.html">or relative(in the same folder)and do not open in a new tab </a>
+      <br>
+      <hr>
+    </section>
+    <section>
+      <h2>Intresting - elements, attributes,tags and types</h2>
+      <h3>Image element(img):</h3>
+      <img src="img/avatar withb eard.png" alt="avatar" width="33%" align="right">example of the image, with alt text
+      "avtar" and width 33% of the whole screen and aligned at the rhs. alt text means the text that will shaow if
+      there is a conflict with the image.
+      <br>
+      <h3>Video element:</h3>
+      <video src="video/videoplayback.mp4" width="400" autoplay muted></video>video in autoplay and muted
+      <video src="video/videoplayback.mp4" width="400" controls loop muted poster="img/avatar withb eard.png"></video>
+      video with controls,loop,muted,and thumbnail i.e poster.
+      <br>
+      <h3>Audio element</h3>
+      <audio src="audio/Ultra instinct goku vs jiren (edit).mp3" autoplay loop>this is a audio element in autoplay and looped</audio>
+      <h3>Table element,with controls. without controll it would just play in the site by its own.</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>
+              Name
+            </th>
+            <th>
+              Roll
+            </th>
+            <th>
+              Marks
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>tuna</th>
+            <th>51</th>
+            <th>22</th>
+          </tr>
+          <tr>
+            <th>mina</th>
+            <th>75</th>
+            <th>100</th>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="2">Result tuna</th>
+            <th>pass</th>
+          </tr>
+          <tr>
+            <th colspan="2">Result mina</th>
+            <th>pass</th>
+          </tr>
+        </tfoot>
+      </table>
+      <h3>Embeding or the iframe tag</h3>
+      <iframe src="https://www.google.com" frameborder="1" width="315" height="560" align="right"></iframe> this is a embeding with frame boder 2
+      <section><h3>Form elements</h3>
+      types of fourm elements
+      <p>input type text<input type="text"></p>
+      <p>input type password<input type="password"></p>
+      <p>input type radio <input type="radio"></p>
+      <p>input type checkbox <input type="checkbox"></p>
+      <p>input type file <input type="file"></p>
+      <p>button(submit) <input type="submit"></p>
+      <p>input type reset <input type="reset"></p>
+      <p>input type image <input type="image"></p>
+    </section>
+    </section>
+    <section>
+      <h2>Making a payment form</h2>
+      <form action=""></form>
+      <h1>payment form</h1>
+      <h2>contact information</h2>
+      <p>name:* <input type="text" name="name" required></p>
+      <fieldtag>
+        <legend>gender</legend>
+        <p>male <input type="radio" name="gender" id="male"></p>
+        <p>female <input type="radio" name="gender" id="female"></p>
+      </fieldtag>
+      <p>Adress:* <textarea name="adress" id="adress" cols="30" rows="10" required></textarea></p>
+      <p>Email:* <input type="email" name="email" id="email" required></p>
+      <p>pincode:* <input type="number" name="pincode" id="pin code" reqired></p>
+      <h2>payment info</h2>
+      <p>card type:
+      <section>
+        <option value="">--select card--</option>
+        <option value="visa">visa</option>
+        <option value="paytm">paytm</option>
+      </section>
+      </p>
+      <p>card number <input type="number" name="card no." id="cardno."></p>
+      <p>expire date: <input type="date" name="exdate" id="expiredate"></p>
+      <p>CVV: <input type="password" name="password" id="pass"></p>
+      <input type="submit" value="paynow">
+
+    </section>
+  </main>
+
+  <footer>
+    <a href="#">twiter</a>
+    <a href="3">insta</a>
+  </footer>
+
+</body>
+
+</html>
